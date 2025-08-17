@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 262.1 83.3% 57.8%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 182 99% 65%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 262.1 83.3% 57.8%;
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 210 40% 98%;
+    --card: 240 5.9% 10%;
+    --card-foreground: 210 40% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 271 83% 60%; /* Vivid Purple */
+    --primary-foreground: 210 40% 98%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 182 99% 65%; /* Electric Blue */
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 271 83% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .hexagon-bg {
+    background-image:
+      /* Bold white hexagon pattern */
+      linear-gradient(30deg, rgba(255, 255, 255, 0.25) 12%, transparent 12.5%, transparent 87%, rgba(255, 255, 255, 0.25) 87.5%, rgba(255, 255, 255, 0.25)),
+      linear-gradient(150deg, rgba(255, 255, 255, 0.25) 12%, transparent 12.5%, transparent 87%, rgba(255, 255, 255, 0.25) 87.5%, rgba(255, 255, 255, 0.25)),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.3) 2%, transparent 2.5%, transparent 97%, rgba(255, 255, 255, 0.3) 97%, rgba(255, 255, 255, 0.3)),
+      /* Your chart background image */
+      url('https://i.ibb.co/SXydHhRK/istockphoto-913219882-612x612.jpg');
+    
+    /* BIG hexagons */
+    background-size: 240px 420px, 240px 420px, 240px 420px, cover;
+    background-position: 0 0, 0 0, 120px 210px, center;
+
+    background-repeat: repeat, repeat, repeat, no-repeat;
+    background-attachment: fixed;
+
+    /* Image blends into hexagons */
+    background-blend-mode: overlay, overlay, overlay, multiply;
+  }
+}
