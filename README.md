@@ -1,4 +1,4 @@
-# StockFlow 📈
+# Tradeverse 📈
 
 Tradeverse is a modern, open-source stock market simulation application designed for educational purposes. It allows users to learn the ropes of stock trading, portfolio management, and market analysis in a risk-free, real-time simulated environment.
 
