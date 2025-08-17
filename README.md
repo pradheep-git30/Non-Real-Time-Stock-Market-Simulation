@@ -1,6 +1,6 @@
 # StockFlow 📈
 
-StockFlow is a modern, open-source stock market simulation application designed for educational purposes. It allows users to learn the ropes of stock trading, portfolio management, and market analysis in a risk-free, real-time simulated environment.
+Tradeverse is a modern, open-source stock market simulation application designed for educational purposes. It allows users to learn the ropes of stock trading, portfolio management, and market analysis in a risk-free, real-time simulated environment.
 
 ![StockFlow Login Page](https://i.ibb.co/GvMF3Yqz/an-image-displaying-a-stock-market-chart-with-rising-or-falling-trends-allowing-space-for-text-backg.jpg)
 
